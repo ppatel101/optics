@@ -96,7 +96,7 @@ config.sass.style = :compressed
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
-  config.action_mailer.default_url_options = {host: ""}
+  config.action_mailer.default_url_options = {host: "https://optics-web.herokuapp.com"}
 
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
