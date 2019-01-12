@@ -104,8 +104,8 @@ config.sass.style = :compressed
   port: 587,
   domain: "gmail.com",
   authentication: "plain",
-  user_name: Rails.application.credentials.email,
-  password: Rails.application.credentials.password,
+  user_name:  Rails.application.credentials.production[:email],
+  password:  Rails.application.credentials.production[:password],
   enable_starttls_auto: true
 }  
 end
