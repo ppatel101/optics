@@ -72,7 +72,7 @@ config.sass.style = :compressed
 
   # Ignore bad email addresses and do not raise email delivery errors.
   # Set this to true and configure the email server for immediate delivery to raise delivery errors.
-  # config.action_mailer.raise_delivery_errors = false
+  config.action_mailer.raise_delivery_errors = true
 
   # Enable locale fallbacks for I18n (makes lookups for any locale fall back to
   # the I18n.default_locale when a translation cannot be found).
@@ -80,6 +80,7 @@ config.sass.style = :compressed
 
   # Send deprecation notices to registered listeners.
   config.active_support.deprecation = :notify
+config.action_mailer.perform_deliveries = true
 
   # Use default logging formatter so that PID and timestamp are not suppressed.
   config.log_formatter = ::Logger::Formatter.new
@@ -96,7 +97,7 @@ config.sass.style = :compressed
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
-  config.action_mailer.default_url_options = {host: "https://optics-web.herokuapp.com"}
+  config.action_mailer.default_url_options = {host: "optics-web.herokuapp.com"}
 
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
