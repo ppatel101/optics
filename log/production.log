@@ -1,0 +1,39 @@
+I, [2018-12-29T22:48:45.989037 #18694]  INFO -- : [76e13b7b-3137-464c-b501-7067dd08ad06] Started GET "/contacts/new" for 127.0.0.1 at 2018-12-29 22:48:45 +0530
+I, [2018-12-29T22:48:45.990433 #18694]  INFO -- : [76e13b7b-3137-464c-b501-7067dd08ad06] Processing by ContactsController#new as HTML
+I, [2018-12-29T22:48:46.001010 #18694]  INFO -- : [76e13b7b-3137-464c-b501-7067dd08ad06] Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.3ms)
+F, [2018-12-29T22:48:46.001973 #18694] FATAL -- : [76e13b7b-3137-464c-b501-7067dd08ad06]   
+F, [2018-12-29T22:48:46.002017 #18694] FATAL -- : [76e13b7b-3137-464c-b501-7067dd08ad06] ActiveRecord::StatementInvalid (Could not find table 'contacts'):
+F, [2018-12-29T22:48:46.002044 #18694] FATAL -- : [76e13b7b-3137-464c-b501-7067dd08ad06]   
+F, [2018-12-29T22:48:46.002069 #18694] FATAL -- : [76e13b7b-3137-464c-b501-7067dd08ad06] app/controllers/contacts_controller.rb:17:in `new'
+I, [2018-12-29T22:48:46.026037 #18694]  INFO -- : [9a09bdfe-74fb-4f04-9080-1e5bc05f0fce] Started GET "/favicon.ico" for 127.0.0.1 at 2018-12-29 22:48:46 +0530
+F, [2018-12-29T22:48:46.027206 #18694] FATAL -- : [9a09bdfe-74fb-4f04-9080-1e5bc05f0fce]   
+F, [2018-12-29T22:48:46.027272 #18694] FATAL -- : [9a09bdfe-74fb-4f04-9080-1e5bc05f0fce] ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+F, [2018-12-29T22:48:46.027296 #18694] FATAL -- : [9a09bdfe-74fb-4f04-9080-1e5bc05f0fce]   
+F, [2018-12-29T22:48:46.027325 #18694] FATAL -- : [9a09bdfe-74fb-4f04-9080-1e5bc05f0fce] actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+[9a09bdfe-74fb-4f04-9080-1e5bc05f0fce] actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+[9a09bdfe-74fb-4f04-9080-1e5bc05f0fce] railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+[9a09bdfe-74fb-4f04-9080-1e5bc05f0fce] railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+[9a09bdfe-74fb-4f04-9080-1e5bc05f0fce] activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+[9a09bdfe-74fb-4f04-9080-1e5bc05f0fce] activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+[9a09bdfe-74fb-4f04-9080-1e5bc05f0fce] activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+[9a09bdfe-74fb-4f04-9080-1e5bc05f0fce] railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+[9a09bdfe-74fb-4f04-9080-1e5bc05f0fce] actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+[9a09bdfe-74fb-4f04-9080-1e5bc05f0fce] actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+[9a09bdfe-74fb-4f04-9080-1e5bc05f0fce] rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+[9a09bdfe-74fb-4f04-9080-1e5bc05f0fce] rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+[9a09bdfe-74fb-4f04-9080-1e5bc05f0fce] activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+[9a09bdfe-74fb-4f04-9080-1e5bc05f0fce] actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+[9a09bdfe-74fb-4f04-9080-1e5bc05f0fce] rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+[9a09bdfe-74fb-4f04-9080-1e5bc05f0fce] railties (5.2.2) lib/rails/engine.rb:524:in `call'
+[9a09bdfe-74fb-4f04-9080-1e5bc05f0fce] puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+[9a09bdfe-74fb-4f04-9080-1e5bc05f0fce] puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+[9a09bdfe-74fb-4f04-9080-1e5bc05f0fce] puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+[9a09bdfe-74fb-4f04-9080-1e5bc05f0fce] puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+[9a09bdfe-74fb-4f04-9080-1e5bc05f0fce] puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+I, [2018-12-29T22:48:48.683288 #18694]  INFO -- : [330ed17c-335f-4846-8e16-2cf2f1f83c50] Started GET "/" for 127.0.0.1 at 2018-12-29 22:48:48 +0530
+I, [2018-12-29T22:48:48.683854 #18694]  INFO -- : [330ed17c-335f-4846-8e16-2cf2f1f83c50] Processing by ContactsController#new as HTML
+I, [2018-12-29T22:48:48.685488 #18694]  INFO -- : [330ed17c-335f-4846-8e16-2cf2f1f83c50] Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.1ms)
+F, [2018-12-29T22:48:48.686642 #18694] FATAL -- : [330ed17c-335f-4846-8e16-2cf2f1f83c50]   
+F, [2018-12-29T22:48:48.686726 #18694] FATAL -- : [330ed17c-335f-4846-8e16-2cf2f1f83c50] ActiveRecord::StatementInvalid (Could not find table 'contacts'):
+F, [2018-12-29T22:48:48.686750 #18694] FATAL -- : [330ed17c-335f-4846-8e16-2cf2f1f83c50]   
+F, [2018-12-29T22:48:48.686774 #18694] FATAL -- : [330ed17c-335f-4846-8e16-2cf2f1f83c50] app/controllers/contacts_controller.rb:17:in `new'
